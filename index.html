@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>WellCrewプロジェクト</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="介護業界の賃金UP、専門性向上のためのプロジェクトページです。事前登録ユーザー1万人を突破したらサービススタートです！" />
+	<meta name="author" content="プローバス株式会社" />
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="WellCrewプロジェクト"/>
+	<meta property="og:image" content="img/image.jpg"/>
+	<meta property="og:url" content="https://project.wellcrew.net/"/>
+	<meta property="og:site_name" content="WellCrewプロジェクト"/>
+	<meta property="og:description" content="介護業界の賃金UP、専門性向上のためのプロジェクトページです。事前登録ユーザー1万人を突破したらサービススタートです！"/>
+	<meta name="twitter:title" content="WellCrewプロジェクト" />
+	<meta name="twitter:image" content="img/image.jpg" />
+	<meta name="twitter:url" content="https://project.wellcrew.net/" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@wellcrew_pro" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- 
+	Default Theme Style 
+	You can change the style.css (default color purple) to one of these styles
+	-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	<!-- End demo purposes only -->
+
+
+	<style>
+	/* For demo purpose only */
+
+	/*
+	GREEN
+	8dc63f
+	RED
+	FA5555
+	TURQUOISE
+	27E1CE
+	BLUE 
+	2772DB
+	ORANGE
+	FF7844
+	YELLOW
+	FCDA05
+	PINK
+	F64662
+	PURPLE
+	7045FF
+
+	*/
+	
+	/* For Demo Purposes Only ( You can delete this anytime :-) */
+	#colour-variations {
+		padding: 10px;
+		-webkit-transition: 0.5s;
+	  	-o-transition: 0.5s;
+	  	transition: 0.5s;
+		width: 140px;
+		position: fixed;
+		left: 0;
+		top: 100px;
+		z-index: 999999;
+		background: #fff;
+		/*border-radius: 4px;*/
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	#colour-variations.sleep {
+		margin-left: -140px;
+	}
+	#colour-variations h3 {
+		text-align: center;;
+		font-size: 11px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #777;
+		margin: 0 0 10px 0;
+		padding: 0;;
+	}
+
+	#colour-variations ul,
+	#colour-variations ul li {
+		padding: 0;
+		margin: 0;
+	}
+	#colour-variations ul {
+		margin-bottom: 20px;
+		float: left;	
+	}
+	#colour-variations li {
+		list-style: none;
+		display: inline;
+	}
+	#colour-variations li a {
+		width: 20px;
+		height: 20px;
+		position: relative;
+		float: left;
+		margin: 5px;
+	}
+
+
+
+	#colour-variations li a[data-theme="style"] {
+		background: #8dc63f;
+	}
+	#colour-variations li a[data-theme="red"] {
+		background: #FA5555;
+	}
+	#colour-variations li a[data-theme="turquoise"] {
+		background: #27E1CE;
+	}
+	#colour-variations li a[data-theme="blue"] {
+		background: #2772DB;
+	}
+	#colour-variations li a[data-theme="orange"] {
+		background: #FF7844;
+	}
+	#colour-variations li a[data-theme="yellow"] {
+		background: #FCDA05;
+	}
+	#colour-variations li a[data-theme="pink"] {
+		background: #F64662;
+	}
+	#colour-variations li a[data-theme="purple"] {
+		background: #7045FF;
+	}
+
+	#colour-variations a[data-layout="boxed"],
+	#colour-variations a[data-layout="wide"] {
+		padding: 2px 0;
+		width: 48%;
+		border: 1px solid #ededed;
+		text-align: center;
+		color: #777;
+		display: block;
+	}
+	#colour-variations a[data-layout="boxed"]:hover,
+	#colour-variations a[data-layout="wide"]:hover {
+		border: 1px solid #777;
+	}
+	#colour-variations a[data-layout="boxed"] {
+		float: left;
+	}
+	#colour-variations a[data-layout="wide"] {
+		float: right;
+	}
+
+	.option-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: 5px;
+		margin-right: -30px;
+		width: 30px;
+		height: 30px;
+		background: #8dc63f;
+		text-align: center;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	.option-toggle i {
+		top: 2px;
+		position: relative;
+	}
+	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+		color:  #fff;
+		text-decoration: none;
+		outline: none;
+	}
+	</style>
+	<!-- End demo purposes only -->
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+
+
+	<!-- 
+		INFO:
+		Add 'boxed' class to body element to make the layout as boxed style.
+		Example: 
+		<body class="boxed">	
+	-->
+	<body>
+	<!-- Loader -->
+	<div class="fh5co-loader"></div>
+
+		<section id="fh5co-hero" class="no-js-fullheight" style="background-image: url(img/top.jpg);" data-next="yes">
+			<div class="fh5co-overlay"></div>
+			<div class="container">
+				<div class="fh5co-intro no-js-fullheight">
+					<div class="fh5co-intro-text">
+						<!-- 
+							INFO:
+							Change the class to 'fh5co-right-position' or 'fh5co-center-position' to change the layout position
+							Example:
+							<div class="fh5co-right-position">
+						-->
+						<div class="fh5co-center-position">
+							<h2 class="animate-box">介護業界に改革を</h2>
+							<h3 class="animate-box">介護業界の賃金UP、専門性向上のためのプロジェクト</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- END #fh5co-hero -->
+		
+		<section id="fh5co-features-2">
+			<div class="container">
+				<div class="col-md-6 col-md-push-6"></div>
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="fh5co-lead animate-box">介護革命</h2>
+						<br>
+						<p class="fh5co-sub-lead">
+						2025年には要介護者は800万人を超えると言われる超高齢化社会。<br>
+						この社会を介護従事者が支えなくて誰が支えていくのか。<br>
+						介護は社会インフラとして重要な仕事です。
+						わたしたちは介護従事者の<br><br>
+						<b>・収入を上げること<br>
+						・業務負担を減らすこと<br>
+						・人材不足を解消すること</b><br><br>
+						この3点を実現していきます。</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+				
+		<section id="fh5co-features">
+			<div class="container">
+				<div class="row row-bottom-padded-sm">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<h2 class="fh5co-lead animate-box">団結するとできること</h2>
+					</div>
+				</div>
+				<div class="row">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="fh5co-feature">
+							<div class="animate-box">
+								<img src="img/a1.png">
+							</div>
+							<h3>知識・スキルの共有</h3>
+							<p>事業所や組織を超えた知識共有を行うことができます。事業所で起きた困難事例も、他の誰かが解決策を知っているかもしれません。ケアで困った時も安心です。</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="fh5co-feature">
+							<div class="animate-box">
+								<img src="img/a2.png">
+							</div>
+							<h3>地域情報の共有</h3>
+							<p>各地域における社会資源情報の共有を行うことができます。自治体の情報や保険外サービスの情報交換を行うことができます。</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="fh5co-feature">
+							<div class="animate-box">
+								<img src="img/a3.png">
+							</div>
+							<h3>学習</h3>
+							<p>毎日のケアに役立つ情報や制度改正のニュースなどを簡単に入手することができます。遠方のイベントもライブ中継で参加することができます。</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="fh5co-feature">
+							<div class="animate-box">
+								<img src="img/a4.png">
+							</div>
+							<h3>外部との連携がスムーズに</h3>
+							<p>近隣の事業所との連携が簡単に行うことができます。事業所間連携ににおける利用者紹介や情報共有、大変だった空室の確認も簡単に行えます。</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="fh5co-feature">
+							<div class="animate-box">
+								<img src="img/a5.png">
+							</div>
+							<h3>本業を活かして複業</h3>
+							<p>介護という専門性を活かして、複数収入源を確保することができます。</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="fh5co-feature">
+							<div class="animate-box">
+								<img src="img/a6.png">
+							</div>
+							<h3>行政への提言</h3>
+							<p>現場の声をまとめて行政に提言します。</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+				</div>
+			</div>
+		</section>	
+
+		<!-- END #fh5co-features -->
+
+
+		<section id="fh5co-features-2">
+			<div class="container">
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="fh5co-lead animate-box">収入UPのために</h2>
+						<br>
+						<p class="fh5co-sub-lead">
+						介護関係職に従事されている方々は、登録するだけでポイントが貰えます！<br>
+						さらにそのポイントは現金やギフト券などに交換することもできます。<br>
+						<br>
+						処遇を改善する方法は、ただ収入をあげるだけではありません。<br>
+						10%offで購入できる商品、利用できるサービスがあればいかがでしょうか。<br>
+						視点を変えればこのように処遇の改善を行うこともできます。<br>
+						<br>
+						いきなり10万円、20万円の処遇改善は難しいかもしれません。<br>
+						まずできるところから初めて徐々に大きくしていきます。<br>
+						<br>
+						このような総合的な取り組みを行い、<br>
+						介護従事者の処遇の改善を一企業が行う新たな試みです。<br>
+						</p>
+				</div>
+			</div>
+		</section>
+		<!-- END #fh5co-features-2 -->
+
+
+		<section id="fh5co-features">
+			<div class="container">
+				<div class="row row-bottom-padded-sm">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<h2 class="fh5co-lead animate-box">始動中のプロジェクト</h2>
+					</div>
+				</div>
+				<div class="row">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="fh5co-feature">
+							<div class="fh5co-icon animate-box">
+								<img src="img/b1.jpg">
+							</div>
+							<h3>看取りケアを学ぶ</h3>
+							<p>介護施設での看取りを推進するプロジェクトです。</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="fh5co-feature">
+							<div class="fh5co-icon animate-box">
+								<img src="img/b2.jpg">
+							</div>
+							<h3>U30_care summit</h3>
+							<p>30歳未満の介護従事者で構成されたプロジェクトです。次世代の介護を担うべく、最先端の知識を学び成長を目指します。</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="fh5co-feature">
+							<div class="fh5co-icon animate-box">
+								<img src="img/b3.jpg">
+							</div>
+							<h3>介護採用戦略室</h3>
+							<p>人事・採用担当者や管理者が、採用難の時代を生き抜くためのプロジェクトです。</p>
+						</div>
+					</div>		</section>
+		<!-- END #fh5co-features-3 -->
+
+
+		<section id="fh5co-features-4">
+			<div class="container">
+				<div class="col-md-6 col-md-push-6">
+					<figure class="fh5co-feature-image">
+						<img src="img/c.png" alt="">
+					</figure>
+				</div>
+				<div class="col-md-6 col-md-pull-6">
+					<h2 class="fh5co-lead animate-box">Twitterキャンペーン</h2>
+					<div class="fh5co-feature">
+						<p>
+						◆介護従事者限定◆フォロー&リツイートでプレゼント！<br><br>
+						さらに！<br>
+						事前登録者の中からサービス内で使える500ポイントが当たる！<br><br>
+
+						ハーゲンダッツミニカップギフト券　抽選30名様<br>
+						サービス内で使える500ポイント　　抽選100名様<br>
+
+						--------------------------------------------------------------------------------<br>
+
+						◆応募期間：2018/3/21(水)～2018/4/23(月)23:59<br><br>
+
+						◆賞品：<br>
+						ハーゲンダッツミニカップギフト券　抽選30名様<br>
+						サービス内で使える500ポイント　　抽選100名様<br><br>
+
+						◆応募条件：<br>
+						1.公式アカウント(<a href="https://twitter.com/wellcrew_pro?lang=ja" target="_blank">@wellcrew_pro</a>)をフォロー<br>
+						2.公式アカウントが投稿した本キャンペーンツイートをリツイート<br>
+						※日本国内にお住まいの介護従事者限定。<br>
+						※リツイートは、公式リツイートに限定させていただきます。<br>
+						※引用リツイートは抽選の対象外となります。(コメントを追加せず、リツイートしてください）<br><br>
+
+						◆当選通知：<br>
+						4月27日までにTwitterのDMにて当選者のみご連絡いたします。<br>
+					（事前登録者プレゼントはメールにてご連絡いたします。）
+						</p><br>
+						
+					<div>
+						<a href="https://twitter.com/wellcrew_pro/status/976345135737839616"  target="_blank" class="btn btn-primary btn-cta">今すぐ応募する</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- END #fh5co-features-4 -->
+		
+		<section id="fh5co-testimonials" style="background-image: url(img/e.jpg);">
+			<div class="container">
+				<div class="row row-bottom-padded-sm">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<h2 class="fh5co-lead  animate-box">事前登録1万人で<br>プロジェクトスタート！</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="flexslider">
+					  		<p>一定の人数がいてこそ成り立つプロジェクトです。<br>そのため、登録が1万人を超えた場合にスタートします。<br>下記より事前登録をお願いします！
+					  		</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END #fh5co-testimonials -->
+
+		<section id="fh5co-features-2">
+			<div class="container">
+				<div class="row row-bottom-padded-sm">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<h2 class="fh5co-lead  animate-box">事前登録</h2>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col-md-9 col-md-offset-3">
+				　　		<div form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdg5eUmHfywZQiVIbbTR6cFPGagfJvCEdpjtTErlr2bG_KfKg/formResponse" method="post">
+								<label for="text">お名前
+								<input type="text" class="form-control" id="name" name="entry.439959436" required/></label><br><br>
+								<label for="email">メールアドレス
+								<input type="email" class="form-control" id="email" name="entry.624384044" required/></label><br><br>
+								<label for="radio">業種<br>
+								<input type="radio" class="form-contro" placeholder="" id="radio-a" name="entry.2086414071" value="介護関係" style="display:inline-block;" checked/><label for="radio-a">　介護関係者</label>
+								<input type="radio" class="form-contro" placeholder="" id="radio-b" name="entry.2086414071" value="医療関係" style="display:inline-block;"><label for="radio-b">　医療関係者</label><br><br><br></label>
+								<div class="col-md-9 col-md-offset-3">
+									<a class="btn btn-primary" type="submit" name="button" value="送信">送信</a>
+								</div>
+							</form>
+							</div>
+						</div>
+					</div>
+		</section>
+		<!-- END #fh5co-subscribe -->
+
+		<footer id="fh5co-footer">
+			<div class="container">
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="fh5co-footer-widget">
+							<h3><a href="http://provas.co.jp/" target="_blank">プローバス株式会社</a></h3>
+							<p>
+								〒460-0007<br>
+								名古屋市中区新栄二丁目2番24号<br>
+								あいちベンチャーハウス<br>
+								TEL　052-241-2750<br>
+								MAIL　info@provas.co.jp
+							</p>
+							<font size="2">Copyright © Provas,Inc</font><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END #fh5co-footer -->
+	</div>
+	<!-- END #fh5co-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="js/jquery.style.switcher.js"></script>
+	<script>
+		$(function(){
+			$('#colour-variations ul').styleSwitcher({
+				defaultThemeId: 'theme-switch',
+				hasPreview: false,
+				cookie: {
+		          	expires: 30,
+		          	isManagingLoad: true
+		      	}
+			});	
+			$('.option-toggle').click(function() {
+				$('#colour-variations').toggleClass('sleep');
+			});
+		});
+	</script>
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	<!-- 
+	INFO:
+	jQuery Cookie for Demo Purposes Only. 
+	The code below is to toggle the layout to boxed or wide 
+	-->
+	<script src="js/jquery.cookie.js"></script>
+	<script>
+		$(function(){
+
+			if ( $.cookie('layoutCookie') != '' ) {
+				$('body').addClass($.cookie('layoutCookie'));
+			}
+
+			$('a[data-layout="boxed"]').click(function(event){
+				event.preventDefault();
+				$.cookie('layoutCookie', 'boxed', { expires: 7, path: '/'});
+				$('body').addClass($.cookie('layoutCookie')); // the value is boxed.
+			});
+
+			$('a[data-layout="wide"]').click(function(event){
+				event.preventDefault();
+				$('body').removeClass($.cookie('layoutCookie')); // the value is boxed.
+				$.removeCookie('layoutCookie', { path: '/' }); // remove the value of our cookie 'layoutCookie'
+			});
+		});
+	</script>
+
+	</body>
+</html>
+
